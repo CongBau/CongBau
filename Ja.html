@@ -3,17 +3,19 @@
 <head>
 
     <script>
-        function hello (){
-            alert("welcome to JS")
+        let counter = 0;
+        function count() {
+            counter++;
+            document.querySelector(`#counter`).innerHTML = counter;
         }
         
     </script>
-    <title>1st JavaScript</title>
+    <title>My Website</title>
     
 </head>
 
 <body>
-    <h1>1st JavaScript</h1>
-    <button onlick="hello()">Click Here!</button>
+    <h1 id="counter">0</h1>
+    <button onlick="count()">Click Here!</button>
 </body>
 </html>
