@@ -6,15 +6,22 @@
     <title>Document</title>
     <script>
         document.addEventListener('DOMMContentLoaded', function() {
+            // By default, submit button is disabled
+            document.querySelector("#submit").disabled = true;
+            // Enable button only if there is next the input field
+            document.querySelector('#task').onkeyup = function() {
+                document.querySelector('#submit').disabled = false;
+            };
             document.querySelector('#new.task').onsubmit = function() {
-                //Create new item for list
+                // Create new item for list
                 const li = document.createlement('li');
                 li.innerHTML = document.querySelector('#task').value;
-                //Add new item to task list
+                // Add new item to task list
                 document.querySelector('#tasks').append(li);
-                //Clear input field
+                //Clear input field and disable button again
                 document.querySelector('#task').valu ='';
-                //Stop form from submitting
+                document.querySelector('#submit').disabled = true;
+                // Stop form from submitting
                 return false;
             };
         });
@@ -26,8 +33,8 @@
     <ul id="tasks">
     </ul>
     <form id="new-task">
-        <input type="text" id="task" autofocus placeholder="New Task" >
-        <input type="submit">
+        <input id="task" autocomplete="off" autofocus placeholder="New Task" type="text" >
+        <input id="submit" type="submit">
     </form>
 </body>
 </html>
