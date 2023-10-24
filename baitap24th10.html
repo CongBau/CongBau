@@ -5,37 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        document.addEventListener('DOMMContentLoaded', function() {
-            // By default, submit button is disabled
-            document.querySelector("#submit").disabled = true;
-            // Enable button only if there is next the input field
-            document.querySelector('#task').onkeyup = function() {
-                document.querySelector('#submit').disabled = false;
-            };
-            document.querySelector('#new.task').onsubmit = function() {
-                // Create new item for list
-                const li = document.createlement('li');
-                li.innerHTML = document.querySelector('#task').value;
-                // Add new item to task list
-                document.querySelector('#tasks').append(li);
-                //Clear input field and disable button again
-                document.querySelector('#task').valu ='';
-                document.querySelector('#submit').disabled = true;
-                // Stop form from submitting
-                return false;
-            };
+        document.addEventListener('DOMContentLoaded', function() {
+            setInterval(count, 1000);
         });
+        let counter = 0;
+        function count() {
+            counter++;
+            document.querySelector('#counter').innerHTML = counter;
+        }
     </script>
-    <title>Tasks</title>
+    <title>My Website</title>
 </head>
 <body>
-    <h1>Tasks</h1>
-    <ul id="tasks">
-    </ul>
-    <form id="new-task">
-        <input id="task" autocomplete="off" autofocus placeholder="New Task" type="text" >
-        <input id="submit" type="submit">
-    </form>
+    <h1 id="counter">0</h1>
+    
 </body>
 </html>
 
