@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function)() {
+            // Change font color to red
+            document.querySelector('red').onclick = function () {
+               document.querySelector('#hello').style.color = 'red';
+            };
+            // Change font color to blue
+            document.querySelector('blue').onclick = function () {
+                document.querySelector('#hello').style.color = 'blue';
+            };
+            // Change font color to green
+            document.querySelector('green').onclick = function () {
+                document.querySelector('#hello').style.color = 'green';
+            };
+        };
+
+    </script>
+    <title>My Website</title>
 </head>
 <body>
-    <form id="form">
-        <h2>Thân Công Báu</h2>
-        Họ tên (*)<input type="text"><br>
-        Tên đăng nhập (*)<input type="text"><br>
-        Password (*)<input type="password"><br>
-    
+    <h1 id="hello">Hello!</h1>
+    <button id="red">Red</button>
+    <button id="blue">Blue</button>
+    <button id="green">Green</button>
+        
 </body>
 </html>
 
