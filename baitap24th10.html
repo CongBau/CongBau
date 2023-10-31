@@ -2,7 +2,7 @@
 <html>
 <head>
 <style>
-.ancestors * { 
+.descendants * { 
   display: block;
   border: 2px solid lightgrey;
   color: lightgrey;
@@ -13,26 +13,19 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("span").parent().css({"color": "red", "border": "2px solid red"});
+  $("div").children().css({"color": "red", "border": "2px solid red"});
 });
 </script>
 </head>
 <body>
 
-<div class="ancestors">
-  <div style="width:500px;">div (great-grandparent)
-    <ul>ul (grandparent)  
-      <li>li (direct parent)
-        <span>2121050398</span>
-      </li>
-    </ul>   
-  </div>
-
-  <div style="width:500px;">div (grandparent)   
-    <p>p (direct parent)
-      <span>bau</span>
-    </p> 
-  </div>
+<div class="descendants" style="width:500px;">div (current element) 
+  <p>p (child)
+    <span>2121050398</span>   
+  </p>
+  <p>p (child)
+    <span>cbau</span>
+  </p> 
 </div>
 
 </body>
