@@ -3,18 +3,18 @@
 <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $.get("demo_test.asp", function(data, status){
-      alert("Data: " + data + "\nStatus: " + status);
-    });
+var jq = $.noConflict();
+jq(document).ready(function(){
+  jq("button").click(function(){
+    jq("p").text("jQuery is still working!");
   });
 });
 </script>
 </head>
 <body>
 
-<button>Send an HTTP GET request to a page and get the result back</button>
+<p>bau</p>
+<button>2121050398</button>
 
 </body>
 </html>
