@@ -6,18 +6,13 @@
     <title></title>
 </head>
    <body> 
-    <?php 
-    $SubJect = "Lap  trinh ung dung web ";
-    $unversityName = "HUMG";
-    $firstNumBer = 2;
-    $SeccondNumber =2;
-    
-    echo "Hoc" . $Subject . "O phong 502 tai truong" .$unversityName
-. "<br>";
-echo "Hoc $Subject o phong 502 tai truong $unversityName <br>";
-echo "<h1> $unversityName </h1>";
-echo $firstNumBer + $SeccondNumber;
-  ?>
-     
+     <form action="5-formGet.php" method="get">
+        <p>Name: </p>
+        <input type ="text" name ="name"><br>
+        <p>E-mail: </p>
+        <input type="text" name="email"><br>
+        <p></p>
+        <input type="submit">
+     </from>
    </body>
 </html>
