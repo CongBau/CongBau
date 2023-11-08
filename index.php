@@ -7,17 +7,17 @@
 </head>
    <body> 
     <?php 
-    $longAccount = 10.000.000;
-    echo "So tien trong tai khoan Long; $longAccount";
-    $HUMGPay = 10.000.000;
-    echo "HUMG chuyen tien: $HUMGPay";
-    $longAccount = $longAccount +$HUMGPay;
-    echo "o tien trong tai khoan Long; $$longAccount";
-     ?>
-     <h3>Hello World!<h3>
-     <select>
-        <option>1</option>
-        <option>2</option>
-      </select>
+    $SubJect = "Lap  trinh ung dung web ";
+    $unversityName = "HUMG";
+    $firstNumBer = 2;
+    $SeccondNumber =2;
+    
+    echo "Hoc" . $Subject . "O phong 502 tai truong" .$unversityName
+. "<br>";
+echo "Hoc $Subject o phong 502 tai truong $unversityName <br>";
+echo "<h1> $unversityName </h1>";
+echo $firstNumBer + $SeccondNumber;
+  ?>
+     
    </body>
 </html>
