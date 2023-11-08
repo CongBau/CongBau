@@ -7,7 +7,12 @@
 </head>
    <body> 
     <?php 
-    echo "MY FIRST PHP FILE";
+    $longAccount = 10.000.000;
+    echo "So tien trong tai khoan Long; $longAccount";
+    $HUMGPay = 10.000.000;
+    echo "HUMG chuyen tien: $HUMGPay";
+    $longAccount = $longAccount +$HUMGPay;
+    echo "o tien trong tai khoan Long; $$longAccount";
      ?>
      <h3>Hello World!<h3>
      <select>
