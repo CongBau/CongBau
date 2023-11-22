@@ -8,17 +8,25 @@
    <body> 
     <?php
      // befor if statement
-        echo "THE GAME";
-        if ($_GET["reponese"] == "yes") //if-1 statement; condittion: $_GET["reponese"] == "yes"
-        {
-         echo "HAS BEEN QUITED"; // if-1 code block 
-        }
-         if ($_GET["reponese"] == "no") //if-2 statement ; condition: $_GET["responese"] == "no" 
-        {
-          echo "WILL BE CONTINNUED IN 3 SECONDS"; // if-2 code block
-        } 
-        // after if statement 
-        echo "<br>AF IF STATENMENT";
-        ?>
+     $USD =22300;
+     $EUR =27300;
+     $SGD =17000;
+     $JYP =120;
+     $amount =$_GET['amount'];
+     echo " $amount USD is equal ";
+     if ($_GET["currency"] == "USD") // if-1 statement; condition: $GET["response"] == "yes"
+     {
+      echo $amount * $USD; // if-1 code block
+     }
+     elseif ($_GET["currency"]== "SGD") {
+       echo $amount * $SGD; //eleif-2 code block
+     }
+     else 
+     {
+      echo $amount * $JPY; // else code block 
+     }
+//after if statement
+     echo "VND";
+    ?>
    </body>
 </html>
