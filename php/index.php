@@ -6,14 +6,19 @@
     <title></title>
 </head>
    <body> 
-    <h3> QUIT THE GAMER?</h3>
-   <from acction="8-ifResult.php" method="get">
-       <selec name ="response">
-          <option value="yes">YES</option>
-          <option value="no">NO</option>
-       </select>
-       <input type="submit" value="Submit">
-   </form>
-</html>
+    <?php
+     // befor if statement
+        echo "THE GAME";
+        if ($_GET["reponese"] == "yes") //if-1 statement; condittion: $_GET["reponese"] == "yes"
+        {
+         echo "HAS BEEN QUITED"; // if-1 code block 
+        }
+         if ($_GET["reponese"] == "no") //if-2 statement ; condition: $_GET["responese"] == "no" 
+        {
+          echo "WILL BE CONTINNUED IN 3 SECONDS"; // if-2 code block
+        } 
+        // after if statement 
+        echo "<br>AF IF STATENMENT";
+        ?>
    </body>
 </html>
