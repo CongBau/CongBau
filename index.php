@@ -7,16 +7,16 @@
 </head>
 <body>
     <?php
-    $items = array('anhchovinh.jpg','anh.jpg','anhwibu.jpg');
+    $items = array('anhchovinh.jpg','chovinhchotmat.jpg','chovinhwibu.jpg');
     foreach($items as $item)
     {
-        echo "<img src ='image/$item' width = 50px height =50px alt='$item'>";
+        echo "<img src ='images/$item' width = 50px height =50px alt='$item'>";
 
     }
     ?>
     <h1>function</h1>
     <?php
-       $items = array('anh.jpg','anhwibu.jpg');
+       $items = array('anhchovinh.jpg','chovinhwibu.jpg');
        foreach ($items as $item)
        {
          echo "<img src='images/$item' width =50 px height =50px alt='$item'>";
