@@ -7,21 +7,19 @@
 </head>
 <body>
     <?php
-    $items = array('anhchovinh.jpg','chovinhchotmat.jpg','chovinhwibu.jpg');
-    foreach($items as $item)
-    {
-        echo "<img src ='images/$item' width = 50px height =50px alt='$item'>";
-
-    }
-    ?>
-    <h1>function</h1>
-    <?php
-       $items = array('anhchovinh.jpg','chovinhwibu.jpg');
-       foreach ($items as $item)
-       {
-         echo "<img src='images/$item' width =50 px height =50px alt='$item'>";
-         
-       }
+     <?php
+     $servername = 'localhost';
+     $username = 'root';
+     $password = '';
+     $db = 'myDB';
+     $conn = new mysqli($servername, $username, $password, $db);
+     if ($conn->connection_error)
+     {
+       die('Connection failed:' . $conn->connection_error);
+     
+     }
+     echo "Connected successfully <br>";
+     ?>
     ?>
 </body>
 </html>
